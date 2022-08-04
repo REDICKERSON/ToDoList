@@ -13,8 +13,6 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-// const items = ["Buy Food", "Cook Food", "Eat Food"];
-// const workItems = [];
 
 // --------- MONGOOSE ----------
 
@@ -42,13 +40,13 @@ const List = mongoose.model("list", listsSchema);
 
 //default todolist items
 const item1 = new Item({
-  name: "Wake up"
+  name: "Hello, this is your new ToDoList!"
 });
 const item2 = new Item({
-  name: "Get dressed"
+  name: "To add something to your list, click the + button below."
 });
 const item3 = new Item({
-  name: "Eat breakfast"
+  name: "<-- Click this checkbox to remove the item from your list.>"
 });
 
 const defaultItems = [item1, item2, item3];
