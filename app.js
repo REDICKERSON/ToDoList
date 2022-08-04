@@ -43,10 +43,10 @@ const item1 = new Item({
   name: "Hello, this is your new ToDoList!"
 });
 const item2 = new Item({
-  name: "To add something to your list, click the + button below."
+  name: "Click the + button below to add list items"
 });
 const item3 = new Item({
-  name: "<-- Click this checkbox to remove the item from your list.>"
+  name: "<-- Click this checkbox to remove list items"
 });
 
 const defaultItems = [item1, item2, item3];
